@@ -4,7 +4,7 @@
 var expect = require('chai').expect
 const Header = require('ethereumjs-block/header.js')
 const ethUtil = require('ethereumjs-util')
-const powTests = require('ethereumjs-testing').tests.powTests.ethash_tests
+const powTests = require('ethereumjs-testing/tests/PoWTests/ethash_tests')
 
 var messages = require('../js/messages')
 

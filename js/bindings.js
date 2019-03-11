@@ -42,6 +42,7 @@ Ethash.prototype.mkcache = function (cacheSize, seed) {
 // returns: { mix: Buffer, hash: buffer }
 Ethash.prototype.run = function (val, nonce, fullSize) {
   // get new cache from cpp
+  fullSize = fullSize || this.fullSize
   var ret = ethashcpp.ethash_light_compute_internal(this.cache, fullSize, val, nonce)
 
   return {
