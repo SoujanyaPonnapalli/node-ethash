@@ -1,12 +1,8 @@
 #include <stdint.h>
-#ifndef __APPLE__
-#include <endian.h>
-#else
-#include "./endian.h"
-#endif
 #include <node.h>
 #include <nan.h>
 
+#include "endian.h"
 #include "util.h"
 #include "messages.h"
 #include "libethash/ethash.h"
