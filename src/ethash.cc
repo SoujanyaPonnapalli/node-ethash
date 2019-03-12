@@ -1,5 +1,5 @@
 #include <stdint.h>
-#include <endian.h>
+#include "./endian.h"
 #include <node.h>
 #include <nan.h>
 
