@@ -1,5 +1,9 @@
 #include <stdint.h>
+#ifndef __APPLE__
+#include <endian.h>
+#else
 #include "./endian.h"
+#endif
 #include <node.h>
 #include <nan.h>
 
